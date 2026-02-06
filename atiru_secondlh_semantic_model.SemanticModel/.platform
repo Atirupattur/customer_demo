@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "atiru_secondlh_semantic_model",
+    "description": "Stock market sem model"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ec972fae-6da5-8412-4b8e-9f8b81d050ba"
+  }
+}

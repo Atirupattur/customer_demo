@@ -1,0 +1,14 @@
+[
+  {
+    "name": "dataset",
+    "path": "/Files",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "7453b8cb-6ddf-43e2-b379-df3197d2f209",
+        "location": "https://publicdatamsdndatalake.dfs.core.windows.net",
+        "subpath": "/dataset"
+      }
+    }
+  }
+]

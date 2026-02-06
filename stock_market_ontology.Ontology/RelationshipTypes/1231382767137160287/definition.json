@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "1231382767137160287",
+  "name": "stockmarketdata_has_calendar",
+  "namespaceType": "Imported",
+  "source": {
+    "entityTypeId": "182531031361246"
+  },
+  "target": {
+    "entityTypeId": "198525765314337"
+  }
+}

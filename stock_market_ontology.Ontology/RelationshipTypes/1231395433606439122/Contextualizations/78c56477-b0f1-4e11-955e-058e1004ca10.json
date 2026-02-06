@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "78c56477-b0f1-4e11-955e-058e1004ca10",
+  "dataBindingTable": {
+    "workspaceId": "00000000-0000-0000-0000-000000000000",
+    "itemId": "1adb9abd-dbb5-b390-4a8a-0b7614574e43",
+    "sourceTableName": "stockmarketdata",
+    "sourceSchema": null,
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "Ticker",
+      "targetPropertyId": "1231330239248651633"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "Ticker",
+      "targetPropertyId": "1231330045755208467"
+    }
+  ]
+}

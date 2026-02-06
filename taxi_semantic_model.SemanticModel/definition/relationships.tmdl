@@ -1,0 +1,8 @@
+relationship eeb81838-e814-4515-b61e-38cae5cac37b
+	fromColumn: Trip.MedallionID
+	toColumn: Medallion.MedallionID
+
+relationship 2fbda09a-2fd7-e4d1-6796-e75b2eb6c12b
+	fromColumn: Trip.HackneyLicenseID
+	toColumn: HackneyLicense.HackneyLicenseID
+

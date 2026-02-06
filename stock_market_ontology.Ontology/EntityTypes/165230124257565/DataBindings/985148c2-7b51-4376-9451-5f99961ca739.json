@@ -1,0 +1,44 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "985148c2-7b51-4376-9451-5f99961ca739",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "Symbol",
+        "targetPropertyId": "1231330045755208467"
+      },
+      {
+        "sourceColumnName": "Name",
+        "targetPropertyId": "1231330073852590285"
+      },
+      {
+        "sourceColumnName": "Country",
+        "targetPropertyId": "1231330097465510567"
+      },
+      {
+        "sourceColumnName": "IPOYear",
+        "targetPropertyId": "1231330119515991741"
+      },
+      {
+        "sourceColumnName": "Sector",
+        "targetPropertyId": "1231330144216030566"
+      },
+      {
+        "sourceColumnName": "Industry",
+        "targetPropertyId": "1231330168672280725"
+      },
+      {
+        "sourceColumnName": "SymbolStartWith",
+        "targetPropertyId": "1231330194058614549"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "1adb9abd-dbb5-b390-4a8a-0b7614574e43",
+      "sourceTableName": "companymaster",
+      "sourceSchema": null
+    }
+  }
+}

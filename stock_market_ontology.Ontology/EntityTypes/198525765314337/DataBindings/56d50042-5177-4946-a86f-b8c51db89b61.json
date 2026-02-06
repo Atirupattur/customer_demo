@@ -1,0 +1,68 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "56d50042-5177-4946-a86f-b8c51db89b61",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "SQLDate",
+        "targetPropertyId": "1231330477461548673"
+      },
+      {
+        "sourceColumnName": "DateID",
+        "targetPropertyId": "1231330497147748812"
+      },
+      {
+        "sourceColumnName": "WeekID",
+        "targetPropertyId": "1231330523276014439"
+      },
+      {
+        "sourceColumnName": "Week",
+        "targetPropertyId": "1231330546175192531"
+      },
+      {
+        "sourceColumnName": "QuarterID",
+        "targetPropertyId": "1231330565405341115"
+      },
+      {
+        "sourceColumnName": "Quarter",
+        "targetPropertyId": "1231330586746983730"
+      },
+      {
+        "sourceColumnName": "MonthID",
+        "targetPropertyId": "1231330613694000818"
+      },
+      {
+        "sourceColumnName": "Month",
+        "targetPropertyId": "1231330636635414233"
+      },
+      {
+        "sourceColumnName": "YearMonthID",
+        "targetPropertyId": "1231330657329133609"
+      },
+      {
+        "sourceColumnName": "YearMonth",
+        "targetPropertyId": "1231330676942922833"
+      },
+      {
+        "sourceColumnName": "WeekDayID",
+        "targetPropertyId": "1231330702164181328"
+      },
+      {
+        "sourceColumnName": "WeekDay",
+        "targetPropertyId": "1231330722896093363"
+      },
+      {
+        "sourceColumnName": "Year",
+        "targetPropertyId": "1231330744306828088"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "1adb9abd-dbb5-b390-4a8a-0b7614574e43",
+      "sourceTableName": "calendar",
+      "sourceSchema": null
+    }
+  }
+}
