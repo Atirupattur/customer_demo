@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "2f20b1f8-e7b3-40aa-8c24-a9042be692e6",
+  "dataBindingTable": {
+    "workspaceId": "00000000-0000-0000-0000-000000000000",
+    "itemId": "1adb9abd-dbb5-b390-4a8a-0b7614574e43",
+    "sourceTableName": "stockmarketdata",
+    "sourceSchema": null,
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "DateID",
+      "targetPropertyId": "1231330239248651633"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "DateID",
+      "targetPropertyId": "1231330497147748812"
+    }
+  ]
+}

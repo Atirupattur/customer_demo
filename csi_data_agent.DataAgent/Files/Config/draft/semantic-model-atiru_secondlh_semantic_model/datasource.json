@@ -1,0 +1,300 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/dataSource/1.0.0/schema.json",
+  "artifactId": "ec972fae-6da5-8412-4b8e-9f8b81d050ba",
+  "workspaceId": "00000000-0000-0000-0000-000000000000",
+  "dataSourceInstructions": null,
+  "displayName": "atiru_secondlh_semantic_model",
+  "type": "semantic_model",
+  "userDescription": null,
+  "metadata": {},
+  "elements": [
+    {
+      "id": "cb6b5b0e-d13f-402e-99d7-d3d8df040aaa",
+      "is_selected": true,
+      "display_name": "calendar",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "32a85469-65b1-4ede-ae5c-25517380d871",
+          "is_selected": true,
+          "display_name": "DateID",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "41bbd087-f859-47f9-9500-c11d4253f13e",
+          "is_selected": true,
+          "display_name": "Month",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "e4917447-cc0a-487c-b18d-71f61e3533a6",
+          "is_selected": true,
+          "display_name": "MonthID",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "a1b79d43-bf8d-4258-9ced-ac20351b5d84",
+          "is_selected": true,
+          "display_name": "Quarter",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "d321845b-845c-454d-aeb7-fb2b6920b56a",
+          "is_selected": true,
+          "display_name": "QuarterID",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "5bde9422-642d-46a2-be09-d38062e582dc",
+          "is_selected": true,
+          "display_name": "SQLDate",
+          "type": "semantic_model.column",
+          "data_type": "DateTime",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "5417bc97-3417-4810-b9c5-5ceacedfca63",
+          "is_selected": true,
+          "display_name": "Week",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "89ec558a-50cb-4b59-8112-ec2a7512b969",
+          "is_selected": true,
+          "display_name": "WeekDay",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "4c6fea53-7620-419f-87fa-aa23dbd75b81",
+          "is_selected": true,
+          "display_name": "WeekDayID",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "f62215ae-9496-4f2f-8968-f6cdf43ae4b4",
+          "is_selected": true,
+          "display_name": "WeekID",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "a194a4b1-8b95-46dc-b7ea-1fb04f8b0ab7",
+          "is_selected": true,
+          "display_name": "Year",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "97722abf-cc73-4826-8b77-2f31bb2bee16",
+          "is_selected": true,
+          "display_name": "YearMonth",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "503b2a3a-5f78-49c3-aaa5-8e63a23be3f2",
+          "is_selected": true,
+          "display_name": "YearMonthID",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "59941a7b-5a26-4e19-aaf7-e9833c4e670a",
+      "is_selected": true,
+      "display_name": "companymaster",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "d8313d5d-d0f4-4f57-9161-94483b06448c",
+          "is_selected": true,
+          "display_name": "Country",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "921acfc6-951c-4fab-a13d-ac0ac871ee3e",
+          "is_selected": true,
+          "display_name": "Industry",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "450b4db3-02c8-4805-8d63-3aa77687e54d",
+          "is_selected": true,
+          "display_name": "IPOYear",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "c4c37477-c82e-4496-902b-a617732d2244",
+          "is_selected": true,
+          "display_name": "Name",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "abaa6dbf-f895-4b6e-8d87-b302c147d766",
+          "is_selected": true,
+          "display_name": "Sector",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "5e310550-c593-4ec3-a391-2021a74f7ea6",
+          "is_selected": true,
+          "display_name": "Symbol",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "2c929aa8-333c-4557-b39e-5aa948fd105b",
+          "is_selected": true,
+          "display_name": "SymbolStartWith",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "abe429f6-d684-40b0-a8e8-ffbd8e333b90",
+      "is_selected": true,
+      "display_name": "stockmarketdata",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "2e4fbf6a-297d-4af0-b788-457ea6f3403a",
+          "is_selected": true,
+          "display_name": "Close",
+          "type": "semantic_model.column",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "4149c46a-c611-4319-ace8-1eefcfe530ed",
+          "is_selected": true,
+          "display_name": "DateID",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "2024d6b9-6a56-4d8c-9c96-cf2f3c5ac539",
+          "is_selected": true,
+          "display_name": "High",
+          "type": "semantic_model.column",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "40b4aafa-2d65-472a-a33c-3a14d9bc3289",
+          "is_selected": true,
+          "display_name": "Low",
+          "type": "semantic_model.column",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "bb688e90-9351-4f56-a569-b054e9f7fae1",
+          "is_selected": true,
+          "display_name": "Open",
+          "type": "semantic_model.column",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "e9ecff68-ae66-40ec-ad13-0742c4d46393",
+          "is_selected": true,
+          "display_name": "OpenInt",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "5e53c7db-24da-4e9b-a45d-58727b22c1c0",
+          "is_selected": true,
+          "display_name": "PriceDiff",
+          "type": "semantic_model.measure",
+          "data_type": "Decimal",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "e032b34c-0594-40a9-b1dd-4e62baa4c010",
+          "is_selected": true,
+          "display_name": "Ticker",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "b95fb163-e0d1-4dd0-bcec-0b07653d510d",
+          "is_selected": true,
+          "display_name": "Vol",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+table stockmarketdata
+	lineageTag: abe429f6-d684-40b0-a8e8-ffbd8e333b90
+	sourceLineageTag: [dbo].[stockmarketdata]
+
+	measure PriceDiff = MAX('stockmarketdata'[High]) - MIN('stockmarketdata'[Low])
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 5e53c7db-24da-4e9b-a45d-58727b22c1c0
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column Ticker
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e032b34c-0594-40a9-b1dd-4e62baa4c010
+		sourceLineageTag: Ticker
+		summarizeBy: none
+		sourceColumn: Ticker
+
+		annotation SummarizationSetBy = Automatic
+
+	column DateID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 4149c46a-c611-4319-ace8-1eefcfe530ed
+		sourceLineageTag: DateID
+		summarizeBy: none
+		sourceColumn: DateID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Open
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(10, 4)
+		lineageTag: bb688e90-9351-4f56-a569-b054e9f7fae1
+		sourceLineageTag: Open
+		summarizeBy: sum
+		sourceColumn: Open
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column High
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(10, 4)
+		lineageTag: 2024d6b9-6a56-4d8c-9c96-cf2f3c5ac539
+		sourceLineageTag: High
+		summarizeBy: sum
+		sourceColumn: High
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column Low
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(10, 4)
+		lineageTag: 40b4aafa-2d65-472a-a33c-3a14d9bc3289
+		sourceLineageTag: Low
+		summarizeBy: sum
+		sourceColumn: Low
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column Close
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(10, 4)
+		lineageTag: 2e4fbf6a-297d-4af0-b788-457ea6f3403a
+		sourceLineageTag: Close
+		summarizeBy: sum
+		sourceColumn: Close
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column Vol
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: b95fb163-e0d1-4dd0-bcec-0b07653d510d
+		sourceLineageTag: Vol
+		summarizeBy: sum
+		sourceColumn: Vol
+
+		annotation SummarizationSetBy = Automatic
+
+	column OpenInt
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: e9ecff68-ae66-40ec-ad13-0742c4d46393
+		sourceLineageTag: OpenInt
+		summarizeBy: sum
+		sourceColumn: OpenInt
+
+		annotation SummarizationSetBy = Automatic
+
+	partition stockmarketdata = entity
+		mode: directLake
+		source
+			entityName: stockmarketdata
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

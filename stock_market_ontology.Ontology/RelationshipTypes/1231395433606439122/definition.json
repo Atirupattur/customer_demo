@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "1231395433606439122",
+  "name": "stockmarketdata_has_companymaster",
+  "namespaceType": "Imported",
+  "source": {
+    "entityTypeId": "182531031361246"
+  },
+  "target": {
+    "entityTypeId": "165230124257565"
+  }
+}

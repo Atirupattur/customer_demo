@@ -1,0 +1,165 @@
+table calendar
+	lineageTag: cb6b5b0e-d13f-402e-99d7-d3d8df040aaa
+	sourceLineageTag: [dbo].[calendar]
+	dataCategory: Time
+
+	column SQLDate
+		dataType: dateTime
+		isKey
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 5bde9422-642d-46a2-be09-d38062e582dc
+		sourceLineageTag: SQLDate
+		summarizeBy: none
+		sourceColumn: SQLDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column DateID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 32a85469-65b1-4ede-ae5c-25517380d871
+		sourceLineageTag: DateID
+		summarizeBy: none
+		sourceColumn: DateID
+
+		annotation SummarizationSetBy = Automatic
+
+	column WeekID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: f62215ae-9496-4f2f-8968-f6cdf43ae4b4
+		sourceLineageTag: WeekID
+		summarizeBy: none
+		sourceColumn: WeekID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Week
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5417bc97-3417-4810-b9c5-5ceacedfca63
+		sourceLineageTag: Week
+		summarizeBy: none
+		sourceColumn: Week
+		sortByColumn: WeekID
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column QuarterID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: d321845b-845c-454d-aeb7-fb2b6920b56a
+		sourceLineageTag: QuarterID
+		summarizeBy: none
+		sourceColumn: QuarterID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a1b79d43-bf8d-4258-9ced-ac20351b5d84
+		sourceLineageTag: Quarter
+		summarizeBy: none
+		sourceColumn: Quarter
+		sortByColumn: QuarterID
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: e4917447-cc0a-487c-b18d-71f61e3533a6
+		sourceLineageTag: MonthID
+		summarizeBy: none
+		sourceColumn: MonthID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 41bbd087-f859-47f9-9500-c11d4253f13e
+		sourceLineageTag: Month
+		summarizeBy: none
+		sourceColumn: Month
+		sortByColumn: MonthID
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearMonthID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 503b2a3a-5f78-49c3-aaa5-8e63a23be3f2
+		sourceLineageTag: YearMonthID
+		summarizeBy: none
+		sourceColumn: YearMonthID
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearMonth
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 97722abf-cc73-4826-8b77-2f31bb2bee16
+		sourceLineageTag: YearMonth
+		summarizeBy: none
+		sourceColumn: YearMonth
+		sortByColumn: YearMonthID
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column WeekDayID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 4c6fea53-7620-419f-87fa-aa23dbd75b81
+		sourceLineageTag: WeekDayID
+		summarizeBy: none
+		sourceColumn: WeekDayID
+
+		annotation SummarizationSetBy = Automatic
+
+	column WeekDay
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 89ec558a-50cb-4b59-8112-ec2a7512b969
+		sourceLineageTag: WeekDay
+		summarizeBy: none
+		sourceColumn: WeekDay
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: a194a4b1-8b95-46dc-b7ea-1fb04f8b0ab7
+		sourceLineageTag: Year
+		summarizeBy: none
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	partition calendar = entity
+		mode: directLake
+		source
+			entityName: calendar
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

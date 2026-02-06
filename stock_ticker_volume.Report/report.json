@@ -1,0 +1,63 @@
+{
+  "config": "{\"version\":\"5.69\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY25SU12\",\"type\":2,\"version\":{\"visual\":\"2.5.0\",\"report\":\"3.1.0\",\"page\":\"2.3.0\"}}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]},\"creationSource\":\"QuickCreate\"}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY25SU12",
+            "path": "BaseThemes/CY25SU12.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "42da538b93d18e473ad7",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"b94e1ce70b1a489f9b65\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.980506822612087,\"y\":0,\"z\":0,\"width\":1125.3021442495128,\"height\":671.1890838206629,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"companymaster.Sector\",\"active\":true}],\"Series\":[{\"queryRef\":\"companymaster.Symbol\"}],\"Y\":[{\"queryRef\":\"CountNonNull(companymaster.Symbol)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"companymaster\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Sector\"},\"Name\":\"companymaster.Sector\",\"NativeReferenceName\":\"Sector\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Symbol\"},\"Name\":\"companymaster.Symbol\",\"NativeReferenceName\":\"Symbol\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Symbol\"}},\"Function\":5},\"Name\":\"CountNonNull(companymaster.Symbol)\",\"NativeReferenceName\":\"Count of Symbol\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Symbol\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[{\"name\":\"1bf66fa164808468ddd2\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"companymaster\"}},\"Property\":\"Symbol\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"companymaster\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Symbol\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'SUM'\"}}]]}}}]},\"type\":\"TopN\",\"howCreated\":0,\"objects\":{},\"isHiddenInViewMode\":false}]",
+          "height": 671.19,
+          "width": 1125.30,
+          "x": 9.98,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "dbaf64142d52320bd134",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"f03d995350ef3b006d6e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.219560878243513,\"y\":0,\"z\":0,\"width\":784.3512974051896,\"height\":457.3253493013972,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"stockmarketdata.Ticker\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(stockmarketdata.Vol)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"stockmarketdata\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Ticker\"},\"Name\":\"stockmarketdata.Ticker\",\"NativeReferenceName\":\"Ticker\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Vol\"}},\"Function\":0},\"Name\":\"Sum(stockmarketdata.Vol)\",\"NativeReferenceName\":\"Sum of Vol\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Vol\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 457.33,
+          "width": 784.35,
+          "x": 10.22,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

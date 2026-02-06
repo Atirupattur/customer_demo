@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Lakehouse",
+    "displayName": "stock_market_datalake"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "1adb9abd-dbb5-b390-4a8a-0b7614574e43"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataAgent",
+    "displayName": "stock_market_dataagent"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "9e9f86e3-566d-94ca-46aa-ab57f5e6391c"
+  }
+}

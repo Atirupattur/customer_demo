@@ -1,0 +1,8 @@
+relationship 64694953-aa09-d731-3b6b-dacb4ca55058
+	fromColumn: stockmarketdata.DateID
+	toColumn: calendar.DateID
+
+relationship 1187e7fa-58ec-ecd4-f20b-3326eb695214
+	fromColumn: stockmarketdata.Ticker
+	toColumn: companymaster.Symbol
+

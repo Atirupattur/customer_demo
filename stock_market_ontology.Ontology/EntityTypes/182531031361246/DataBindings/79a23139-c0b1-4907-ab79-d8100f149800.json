@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "79a23139-c0b1-4907-ab79-d8100f149800",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "Ticker",
+        "targetPropertyId": "1231330239248651633"
+      },
+      {
+        "sourceColumnName": "DateID",
+        "targetPropertyId": "1231330261877860621"
+      },
+      {
+        "sourceColumnName": "Open",
+        "targetPropertyId": "1231330282348723386"
+      },
+      {
+        "sourceColumnName": "High",
+        "targetPropertyId": "1231330313000510921"
+      },
+      {
+        "sourceColumnName": "Low",
+        "targetPropertyId": "1231330337518772266"
+      },
+      {
+        "sourceColumnName": "Close",
+        "targetPropertyId": "1231330362808614585"
+      },
+      {
+        "sourceColumnName": "Vol",
+        "targetPropertyId": "1231330382841580578"
+      },
+      {
+        "sourceColumnName": "OpenInt",
+        "targetPropertyId": "1231330408521015097"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "1adb9abd-dbb5-b390-4a8a-0b7614574e43",
+      "sourceTableName": "stockmarketdata",
+      "sourceSchema": null
+    }
+  }
+}
